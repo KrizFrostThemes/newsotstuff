@@ -1,46 +1,119 @@
-//META{"name":"Sea Of Thieves","description":"Sea of thieves Clean darkmode Slick Designed Theme for discord","author":"KrizFrost#0773","version":"AutoUpdate"}*//{}
+//META{"name":"SoT Fallback","description":"Contains fallback options.","author":"KrizFrost#0773","version":"4"}*//{}
 
-/* Please keep !important by each option, this helps override the fallback system */
-@import url("https://raw.githack.com/CorbsEditor/Dream-Frame/master/others/ProfileBackgrounds.css");
-@import url("https://raw.githack.com/CorbsEditor/Dream-Frame/master/others/Fallback.theme.css");
+/* Fallback system for Dream Frame */
 
-/* - */
-/* Animation */
-/* - */
-/* Background Boot Up BBU */
-@keyframes bbu {
-  0% {
-    background-image: var(--custombackground);
-    opacity: 0.1;
-    filter: blur(10px);
-    background-repeat: var(--bgrepeat);
-    transform: scale(3) rotate(-10deg);
-    background-size: cover;
+/* BG */
+.appMount-3lHmkl::before {
+    content: "";
+    background-color: #252525;
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
-  }
-  100% {
-    background-image: var(--custombackground);
-    opacity: var(--opacitybg);
-    filter: blur(var(--blur));
-    background-repeat: var(--bgrepeat);
-    transform: scale(var(--bgscale)) rotate(var(--bgrotation));
+}
+/* Home Icon */
+.theme-dark .homeIcon-1FoKUJ {
+    color: transparent;
+    background-image: url();
+    background-size: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Server icons */
+.guild-1EfMGQ .guildIcon-CT-ZDq {
+    border-radius: 50px;
+}
+.iconInactive-98JN5i {
+    border-radius: 50px;
+}
+/* Emoji */
+.emoji.jumboable {
+    height: 30px;
+    width: 30px;
+}
+/* Avatar */
+.image-33JSyf, .wrapper-2F3Zv8 {
+    border-radius: 50px;
+}
+.image-33JSyf.large-3ChYtB {
+    height: 40px;
+    width: 40px;
+}
+.image-33JSyf.da-image.small-5Os1Bb.da-small.mask-3OgeRz.da-mask {
+    border-radius: 50px;
+}
+/* Profile Modal */
+.headerSpotify-zpWxgT, .theme-dark .headerNormal-T_seeN, .topSectionSpotify-1lI0-P {
+    background: #738bd7;
+}
+.lookOutlined-3sRXeN.colorWhite-rEQuAQ {
+    color: white;
+}
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+    background-color: #738bd7;
+    color: white;
+}
+/* Border Radius */
+.member-3W1lQa {
+    border-radius: 3px;
+}
+.lookOutlined-3sRXeN.colorWhite-rEQuAQ {
+    border-radius: 5px;
+}
+button.primaryButton-2BsGPp.da-primaryButton.gutter-15v0rO.da-gutter.button-38aScr.da-button.lookFilled-1Gx00P.colorBrand-3pXr91.sizeXlarge-2yFAlZ.grow-q77ONN.da-grow {
+    border-radius: 5px;
+}
+button.secondaryButton-BIo-2g.da-secondaryButton.button-38aScr.da-button.lookFilled-1Gx00P.colorPrimary-3b3xI6.sizeXlarge-2yFAlZ.grow-q77ONN.da-grow {
+  border-radius: 5px;
+}
+.theme-dark .cardPrimaryEditable-3KtE4g {
+    border-radius: 5px;
+}
+button.button-38aScr.da-button.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMedium-1AC_Sl.grow-q77ONN.da-grow {
+  border-radius: 5px;
+}
+button.button-38aScr.da-button.lookFilled-1Gx00P.colorPrimary-3b3xI6.sizeSmall-2cSMqn.grow-q77ONN.da-grow {
+  border-radius: 5px;
+}
+button.subscribeButton-2h8nOh.da-subscribeButton.button-38aScr.da-button.lookFilled-1Gx00P.colorPrimary-3b3xI6.sizeLarge-1vSeWK.grow-q77ONN.da-grow {
+  border-radius: 5px;
+}
+button.button-38aScr.da-button.lookFilled-1Gx00P.colorBrand-3pXr91.sizeSmall-2cSMqn.grow-q77ONN.da-grow {
+    border-radius: 5px;
+}
+
+.appMount-3lHmkl .root-SR8cQa .header-QKLPzZ .avatar-3EQepX .image-33JSyf[style*="273169968202252289"] + .statusProfile-3ynqtt {
+    background-image: url("https://get.wallhere.com/photo/illustration-minimalism-text-pattern-orange-Himouto-Umaru-chan-Doma-Umaru-color-hand-screenshot-font-83169.png");
+    background-position: 0 0px;
+		filter: brightness(0.8);
+}
+.appMount-3lHmkl .root-SR8cQa .header-QKLPzZ .avatar-3EQepX .image-33JSyf[style*="161692463365357568"] + .statusProfile-3ynqtt {
+    background-image: url("https://i.imgur.com/LHhRIG2.png");
+		filter: blur(var(--NSFWbg)) !important;
+}
+.appMount-3lHmkl .root-SR8cQa .header-QKLPzZ .avatar-3EQepX .image-33JSyf[style*="254362351170617345"] + .statusProfile-3ynqtt {
+    background-image: url("https://cdn.discordapp.com/attachments/534880602034274314/543140696807178266/Tropical.png");
+}
+.appMount-3lHmkl .root-SR8cQa .header-QKLPzZ .avatar-3EQepX .image-33JSyf[style*="155407912481718272"] + .statusProfile-3ynqtt {
+    background-image: url("https://cdn.discordapp.com/attachments/501144124880322570/536372585487794177/WIN_20190119_23_12_42_Pro.jpg");
+}
+.appMount-3lHmkl .root-SR8cQa .header-QKLPzZ .avatar-3EQepX .image-33JSyf[style*="282340088929845248"] + .statusProfile-3ynqtt {
+    background-image: url("https://cdn.discordapp.com/attachments/534880602034274314/546107586852945940/howls.gif");
+}
+.appMount-3lHmkl .root-SR8cQa .header-QKLPzZ .avatar-3EQepX .image-33JSyf[style*="282930004734640130"] + .statusProfile-3ynqtt {
+    background-image: url("https://cdn.discordapp.com/attachments/534880602034274314/546109187650879508/XjKfgHt.jpg");
+}
+.appMount-3lHmkl .root-SR8cQa .header-QKLPzZ .avatar-3EQepX .image-33JSyf[style*="443765978132643850"] + .statusProfile-3ynqtt {
+    background-image: url("https://cdn.discordapp.com/attachments/534880602034274314/546205630361239563/Surface_Book_-_Rainbow.jpg");
+}
+.appMount-3lHmkl .root-SR8cQa .header-QKLPzZ .avatar-3EQepX .image-33JSyf[style*="126053182748098567"] + .statusProfile-3ynqtt {
+    background-image: url("https://cdn.discordapp.com/attachments/534880602034274314/546690784481640448/1537293941448.png");
+.theme-dark .body-3ND3kc {
+    background: url(https://i.ytimg.com/vi/5SJkKnNqBnE/maxresdefault.jpg);
     background-size: cover;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-  }
 }
-/* - - - Custom Options - - - */
-/* Background*/
-body {
-  background: transparent !important;
-}
+
 .appMount-3lHmkl {
     background: rgba(0, 0, 0, var(--opacityDiscord)) !important;
     border-radius: var(--appbr) !important;
@@ -279,7 +352,7 @@ button.button-38aScr.da-button.lookFilled-1Gx00P.colorBrand-3pXr91.sizeSmall-2cS
 /* - */
 .feedCarousel-3F1_Q-.carousel-1Mb2Ud::before {
     content: "";
-    background-image: url(https://i.imgur.com/8GONWIT.png);
+    background-image: url(https://raw.githubusercontent.com/KrizFrostThemes/newsotstuff/master/changelog.png);
     position: absolute;
     width: 100%;
     height: 650px;
@@ -296,7 +369,7 @@ button.button-38aScr.da-button.lookFilled-1Gx00P.colorBrand-3pXr91.sizeSmall-2cS
 /* Loading Screen */
 /* - */
 body {
-    content: "Discord";
+    content: "Sea Of Thieves";
     background-color: black;
 }
 .container-16j22k {
@@ -1450,198 +1523,198 @@ li.role-2irmRk.flex-1O1GKY.alignCenter-1dQNNs.pc-role.pc-flex.pc-alignCenter {
 /* Status Picker */
 /* - */
 .popout-3sVMXz.popoutTop-3uu9vG-left {
-	box-shadow: none;
+    box-shadow: none;
 }
 @keyframes status-picker-bg {
-	to {
-		background-color: rgba(0,0,0,0.85);
-	}
+    to {
+        background-color: rgba(0,0,0,0.85);
+    }
 }
 .theme-dark .menu-Sp6bN1 {
   background: #2f3136;
-	box-shadow: 0 0 1px rgba(0,0,0,.82), 0 1px 4px rgba(0,0,0,.1);
-	border-radius: 0px;
+    box-shadow: 0 0 1px rgba(0,0,0,.82), 0 1px 4px rgba(0,0,0,.1);
+    border-radius: 0px;
 }
 .menu-Sp6bN1.alt-3btY0e .item-1GzJrl:hover {
-	background: #272727!important;
-	transition: all 0.2s ease!important;
+    background: #272727!important;
+    transition: all 0.2s ease!important;
 }
 .menu-Sp6bN1.alt-3btY0e .item-1GzJrl:active {
-	background: #525252!important;
+    background: #525252!important;
 }
 .menu-Sp6bN1.alt-3btY0e .separator-2zcjq8 {
-	display: none;
+    display: none;
 }
 .popoutTopLeft-b5Eb3O.noArrow-3BYQ0Z {
-	margin-top: -20px;
-	margin-left: -10px;
+    margin-top: -20px;
+    margin-left: -10px;
 }
 .menu-Sp6bN1 {
-	padding-left: 30px;
-	left: -30px;
-	border-radius: 0;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	pointer-events: inherit;
-	width: 100%;
-	padding-right: 33px;
+    padding-left: 30px;
+    left: -30px;
+    border-radius: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    pointer-events: inherit;
+    width: 100%;
+    padding-right: 33px;
 }
 
 @keyframes statuspicker-status {
-	from {
-		opacity: 0;
-		transform: translate(0, 50%);
-	}
-	to {
-		opacity: 1;
-	}
+    from {
+        opacity: 0;
+        transform: translate(0, 50%);
+    }
+    to {
+        opacity: 1;
+    }
 }
 .menu-Sp6bN1.alt-3btY0e .item-1GzJrl .status {
-	border-radius: 100px;
-	transition: all 0.2s ease!important;
+    border-radius: 100px;
+    transition: all 0.2s ease!important;
 }
 .menu-Sp6bN1.alt-3btY0e .item-1GzJrl .status:hover {
-	transition: all 0.2s ease!important;
+    transition: all 0.2s ease!important;
 }
 .menu-Sp6bN1.alt-3btY0e .status-3fQvEa {
-	padding: 7px;
+    padding: 7px;
 }
 .alt-3btY0e .item-1GzJrl .statusIconText-3b4TkH > div {
-	font-size: 16px;
-	margin-left: 0;
+    font-size: 16px;
+    margin-left: 0;
 }
 .menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-of-type(1) .status {
-	z-index: 5;
-	background-color:#43b581;
-	animation: statuspicker-status 300ms ease;
-	animation-delay: 200ms;
-	animation-fill-mode: forwards;
-	opacity: 0;
+    z-index: 5;
+    background-color:#43b581;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 .menu-Sp6bN1.alt-3btY0e .item-1GzJrl {
-	transition: 100ms ease!important;
-	cursor: default;
+    transition: 100ms ease!important;
+    cursor: default;
 }
 .menu-Sp6bN1.alt-3btY0e .item-1GzJrl:hover {
-	color: rgba(255, 255, 255, .8);
-	border-radius: 3px!important;
+    color: rgba(255, 255, 255, .8);
+    border-radius: 3px!important;
 }
 .alt-3btY0e .item-1GzJrl:nth-of-type(1) .statusIconText-3b4TkH > div {
-	color: #43b581;
-	animation: statuspicker-status 300ms ease;
-	animation-delay: 200ms;
-	animation-fill-mode: forwards;
-	opacity: 0;
+    color: #43b581;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-of-type(3) .status {
-	z-index: 4;
-	background-color: #faa61a;
-	animation: statuspicker-status 300ms ease;
-	animation-delay: 100ms;
-	animation-fill-mode: forwards;
-	opacity: 0;
+    z-index: 4;
+    background-color: #faa61a;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 .alt-3btY0e .item-1GzJrl:nth-of-type(3) .statusIconText-3b4TkH > div {
-	color: #faa61a;
-	animation: statuspicker-status 300ms ease;
-	animation-delay: 150ms;
-	animation-fill-mode: forwards;
-	opacity: 0;
+    color: #faa61a;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 150ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-of-type(4) .status {
-	z-index: 3;
-	background-color: #f04747;
-	animation: statuspicker-status 300ms ease;
-	animation-delay: 150ms;
-	animation-fill-mode: forwards;
-	opacity: 0;
+    z-index: 3;
+    background-color: #f04747;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 150ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 .alt-3btY0e .item-1GzJrl:nth-of-type(4) .statusIconText-3b4TkH > div {
-	color: #f04747;
-	animation: statuspicker-status 300ms ease;
-	animation-delay: 150ms;
-	animation-fill-mode: forwards;
-	opacity: 0;
+    color: #f04747;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 150ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
-.alt-3btY0e .item-1GzJrl:nth-of-type(4) .helper-2c73HK	{
-	display: flex;
-	align-items: center;
+.alt-3btY0e .item-1GzJrl:nth-of-type(4) .helper-2c73HK  {
+    display: flex;
+    align-items: center;
 }
 .alt-3btY0e .item-1GzJrl:nth-of-type(4):hover .helper-2c73HK  {
-	background-color: #C03F3F;
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	margin: auto;
-	top: 340px;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 550px;
-	height: 20px;
-	padding: 12px 5px;
-	border-radius: 3px;
-	font-size: 16px;
-	font-weight: 100;
-	text-align: center;
-	pointer-events: none;
-	opacity: 1;
-	animation: statuspicker-status 300ms ease;
+    background-color: #C03F3F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 340px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 550px;
+    height: 20px;
+    padding: 12px 5px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    pointer-events: none;
+    opacity: 1;
+    animation: statuspicker-status 300ms ease;
 }
 
 .menu-Sp6bN1.alt-3btY0e .item-1GzJrl:nth-of-type(5) .status {
-	z-index: 2;
-	background-color: #57616D;
-	animation: statuspicker-status 300ms ease;
-	animation-delay: 100ms;
-	animation-fill-mode: forwards;
-	opacity: 0;
+    z-index: 2;
+    background-color: #57616D;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 .alt-3btY0e .item-1GzJrl:nth-of-type(5) .statusIconText-3b4TkH > div {
-	color: #646f7d;
-	animation: statuspicker-status 300ms ease;
-	animation-delay: 100ms;
-	animation-fill-mode: forwards;
-	font-weight: 600;
-	opacity: 0;
+    color: #646f7d;
+    animation: statuspicker-status 300ms ease;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+    font-weight: 600;
+    opacity: 0;
 }
 .alt-3btY0e .item-1GzJrl:last-child .helper-2c73HK:last-child {
-	display: block;
-	position: fixed;
-	bottom: 20px;
+    display: block;
+    position: fixed;
+    bottom: 20px;
 }
 .alt-3btY0e .item-1GzJrl:nth-of-type(5):hover .helper-2c73HK:last-child  {
-	background-color: #3A3E43;
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	margin: auto;
-	top: 340px;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 550px;
-	height: 20px;
-	padding: 12px 5px;
-	border-radius: 3px;
-	font-size: 16px;
-	font-weight: 100;
-	text-align: center;
-	pointer-events: none;
-	opacity: 1;
-	animation: statuspicker-status 300ms ease;
+    background-color: #3A3E43;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 340px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 550px;
+    height: 20px;
+    padding: 12px 5px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    pointer-events: none;
+    opacity: 1;
+    animation: statuspicker-status 300ms ease;
 }
 
 .alt-3btY0e .item-1GzJrl .helper-2c73HK {
-	display: none!important;
+    display: none!important;
 }
 
 
@@ -2394,11 +2467,94 @@ textarea.textArea-2Spzkt.da-textArea.textAreaForm-18s4EO.textArea-2Spzkt.da-text
   /* @import url(https://cdn.staticaly.com/gh/CorbsEditor/Dream-Frame/master/Templates/macOS%20Titlebar/Vertical.css);
 
 /* Upload Modal */
-  /* Default - Dream Frame */
-  @import url(https://cdn.staticaly.com/gh/CorbsEditor/Dream-Frame/master/Templates/Upload%20Modal/Default.theme.css);
+/* Upload Modal Template - Default */
 
-  /* Default - Discord */
-  /* @import url(https://cdn.staticaly.com/gh/CorbsEditor/Dream-Frame/master/Templates/Upload%20Modal/DiscordDefault.theme.css); */
+* Backgrounds and Borders */
+.uploadModal-2ifh8j {
+   background-color: transparent;
+}
+.uploadModal-2ifh8j .inner-3nWsbo {
+    border: 2px dashed rgba(170, 184, 232, 0);
+}
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo {
+    border: 2px dashed hsla(0, 0%, 100%, 0);
+}
+/* Upload is too big */
 
-  /* Expose X Classic - from beta v0.3 */
-  /* @import url(https://cdn.staticaly.com/gh/CorbsEditor/Dream-Frame/master/Templates/Upload%20Modal/Classic.theme.css); */
+/* Video File */
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.video-27RLEH {
+    background-image: url(/assets/dae57381bd2599b546fc014a41708c06.svg);
+    background-color: #5b6dae;
+    padding: 137px;
+    width: 446px;
+    margin-left: -12px;
+    border-radius: 8px 8px 0px 0px;
+}
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.webcode-22GGLX {
+    background-color: #5b6dae;
+    padding: 137px;
+    width: 446px;
+    margin-left: -12px;
+    border-radius: 8px 8px 0px 0px;
+}
+/* File */
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.unknown-3TPTMr {
+    background-image: url(/assets/92fc72e47a5854ae12c1167e69573d77.svg);
+    background-color: #5b6dae;
+    padding: 137px;
+    width: 446px;
+    margin-left: -12px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+/* Document */
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.document-2cvI0u {
+    background-image: url(/assets/a4ef7d20760cef4c165825770fd12ac7.svg);
+    background-color: #5b6dae;
+    padding: 137px;
+    width: 446px;
+    margin-left: -12px;
+    border-radius: 8px 8px 0px 0px;
+}
+/* ZIP */
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.archive-2hqXug {
+    background-image: url(/assets/3408a4597fdee6f7edef69f7fb487b38.svg);
+    background-color: #5b6dae;
+    padding: 137px;
+    width: 446px;
+    margin-left: -12px;
+    border-radius: 8px 8px 0px 0px;
+}
+/* Size of Modal */
+.uploadModal-2ifh8j {
+    min-height: 428px;
+    width: 720px;
+}
+/* Image */
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j {
+    background-color: #5b6dae;
+    background-size: cover;
+    border: 2px solid rgb(91, 109, 174);
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+    height: 392px;
+    margin-left: -12px;
+    width: 720px;
+}
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j:active {
+    background-image: contain;
+}
+/* Comment Box */
+.uploadModal-2ifh8j .inner-3nWsbo .comment-4IWttf {
+    margin: 0 18px;
+    margin-top: 243px;
+    margin-bottom: -107px;
+    margin-right: 160px;
+}
+.uploadModal-2ifh8j .inner-3nWsbo .comment-4IWttf .label-3aiqT2 .optional--ezibr {
+    opacity: 0;
+}
+/*  Buttons */
+.uploadModal-2ifh8j .footer-3mqk7D .button-primary {
+    border-radius: 50px;
+}
